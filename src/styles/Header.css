@@ -1,0 +1,35 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #231f20;
+    height: 100px;
+    padding-left: 2vw;
+    padding-right: 1vw;
+}
+
+
+
+h1 {
+    color: #ffffff;
+    font-size: 1.5em;
+    margin: 10px;
+    width: 100%;
+}
+
+.boton-grupo {
+
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    height: 50%;
+}
+
+.logo-grupo {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+}
