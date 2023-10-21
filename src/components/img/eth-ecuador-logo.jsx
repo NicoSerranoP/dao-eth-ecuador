@@ -1,6 +1,6 @@
-function EthLogo() {
+function EthLogo(props) {
     return (
-        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0.00 0.00 1119.00 1872.00">
+        <svg className={props.className} xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0.00 0.00 1119.00 1872.00">
             <path fill="#ffdd00" d="
   M 565.10 1.45
   Q 564.45 5.22 564.45 6.25

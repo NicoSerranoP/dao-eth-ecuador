@@ -13,8 +13,8 @@ function Header() {
     return (
         <header className='header'>
             <div className='logo-grupo'>
-                <Logo />
-                <h1>ETH Tricolor</h1>
+                <Logo className = 'logo-eth'/>
+                <h1 className='titulo-logo'>ETH Tricolor</h1>
             </div>
             <div className="boton-grupo">
                 <Boton

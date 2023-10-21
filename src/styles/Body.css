@@ -1,0 +1,13 @@
+.body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    /*height: 100vh;*/
+    overflow-y: scroll;
+    width: 100%;
+}
+
+.default-container{
+    flex: 1;
+}
