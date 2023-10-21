@@ -3,14 +3,23 @@ import React from 'react';
 
 
 function Boton(props) {
+    /**
+     * props:
+     * contenido: string
+     * colorFondo: string
+     * colorTexto: string
+     * icono: string
+     * margin: string
+     */
     const buttonStyle = {
         backgroundColor: props.colorFondo,
-        color: props.colorTexto
+        color: props.colorTexto,
+        margin: props.margin,
     }
 
     return (
         <>
-            <button className='boton' style={buttonStyle}>
+            <button className='boton' style={props.style ? props.style : buttonStyle}>
                 {props.icono}
                 <div className='text'>{props.contenido}</div>
             </button>

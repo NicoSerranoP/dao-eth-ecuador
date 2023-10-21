@@ -11,16 +11,17 @@ function Tabla(props) {
 
     const encabezado = props.encabezado;
     const cuerpo = props.cuerpo;
+    const containerStyle = props.containerStyle;
 
     return (
 
-        <table className="tabla">
-            <tbody className="cuerpoTabla">
+        <table className="tabla" style={containerStyle}>
+            <tbody className="cuerpoTabla" >
                 {encabezado.map((encabezadoItem, index) => (
                     <tr key={index}>
                         <td className="encabezado">{encabezadoItem}</td>
                         {cuerpo.map((fila, filaIndex) => (
-                            <td key={filaIndex}>{fila[index]}</td>
+                            <td key={filaIndex} className="item">{fila[index]}</td>
                         ))}
                     </tr>
                 ))}

@@ -1,11 +1,11 @@
-.header {
+.footer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     background-color: #231f20;
     width: 100%;
-    padding: 10px 0px;
+
 }
 
 
@@ -20,28 +20,29 @@
     align-items: center;
 }
 
-.logo-eth {
-    height: 90%;
-    margin-right: 5px;
-}
-
-
 /*grupos*/
-.boton-grupo {
+
+.footer-boton-grupo {
     flex: 1;
     display: flex;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
-    margin: 10px;
-    height: 50%;
-    padding-right: 2vw;
+
+    height: 100%;
+
 }
 
-.logo-grupo {
+.footer-botones-grupo {
     display: flex;
-    flex: 1;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
+    width: 100%;
     height: 100%;
-    padding-left: 4vw;
+}
+
+.gradient-separator {
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, #fddb22, #1b77ae, #ba2733);
 }

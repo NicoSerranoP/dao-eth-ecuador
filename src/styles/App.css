@@ -8,10 +8,15 @@
 }
 
 .header {
-  height: 10vh;
+  height: 8vh;
   min-height: 60px;
 }
 
 .body {
-  height: calc(100% - 20vh);
+  height: calc(100% - 16vh);
+}
+
+.footer {
+  height: 8vh;
+  min-height: 60px;
 }
