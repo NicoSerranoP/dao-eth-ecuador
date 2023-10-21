@@ -1,10 +1,11 @@
 import React from 'react';
-function walletIcon(props) {
+function WalletIcon(props) {
     const styleIcono = {
-        width: props.sizeFixed
+        //width: props.sizeFixed,
+        width: '2vw',
     }
     return (
-        <svg className={props.className} style = {styleIcono}xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0.00 0.00 512.00 512.00">
+        <svg className={props.className} style={Object.assign({}, styleIcono, props.iconoStyle)} xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0.00 0.00 512.00 512.00">
             <path fill={props.color} d="
   M 512.00 277.32
   L 512.00 362.57
@@ -105,4 +106,4 @@ function walletIcon(props) {
 }
 
 
-export default walletIcon;
+export default WalletIcon;

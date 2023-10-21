@@ -1,0 +1,25 @@
+.lista {
+    /*border-collapse: collapse;*/
+    list-style-type: none;
+    padding: 1.5vh 5vw;
+    margin: 0;
+
+}
+
+.item-lista {
+    padding: 1vh 0;
+}
+
+.item-lista-cuerpo {
+    margin: 0;
+    padding: 0 0;
+    font-size: calc(1.5vh + 1vw);
+    color: #231f20;
+}
+
+.item-lista-encabezado {
+    margin: 0;
+    font-size: calc(1.5vh + 1.5vw);
+    padding: 0 0;
+    color: #231f20;
+}

@@ -1,17 +1,22 @@
 import React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-import Body from './components/Body';
-import Header from './components/Header';
-import Footer from './components/Footer';
+import Info from './components/pages/Info';
+import Members from './components/pages/Members';
+import Proposals from './components/pages/Proposals';
+
 import './styles/App.css';
 
 function App() {
   return (
-    <div className='app-container'>
-      <Header />
-      <Body />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Info />} />
+        <Route path="/members" element={<Members />} />
+        <Route path="/proposals" element={<Proposals />} />
+      </Routes>
+    </BrowserRouter>
+
   );
 }
 

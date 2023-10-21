@@ -1,21 +1,24 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+
 import '../styles/Header.css'
 
-import Logo from './img/eth-ecuador-logo'
-import WalletIcon from './img/wallet-icon'
+import Logo from './img/EthLogo'
+import WalletIcon from './img/WalletIcon'
 
 import Boton from "./Boton";
 
 
 function Header() {
+    const navigate = useNavigate();
     const buttonIcon = <WalletIcon color='#ffff' className='icono' sizeFixed='20px' />
 
     return (
         <header className='header'>
-            <div className='logo-grupo'>
-                <Logo className = 'logo-eth'/>
-                <h1 className='titulo-logo'>ETH Tricolor</h1>
-            </div>
+            <button className='logo-grupo' onClick={() => navigate('/')}>
+                <Logo className='logo-eth' />
+                <h1 className='titulo-logo' >ETH Tricolor</h1>
+            </button>
             <div className="boton-grupo">
                 <Boton
                     contenido='Conectar Wallet'

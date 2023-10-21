@@ -17,8 +17,12 @@
 }
 
 .text {
-    font-size: max(calc(1.5vh + 0.5vw), 15px);
+    font-size: calc(1.8vh + 0.2vw);
+    /*max(calc(1.5vh + 0.5vw), 15px);*/
+    /*color texto p*/
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 .icono {

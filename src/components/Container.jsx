@@ -13,7 +13,7 @@ function Container(props) {
     return (
         <div className='default-container' style={props.containerStyle}>
             <h1 className={props.titleContent ? "container-title" : "container-none"} style={props.titleStyle}>{props.titleContent}</h1>
-            <p className="container-body" style={props.bodyStyle}>{props.bodyContent}</p>
+            <p className={props.bodyContent ? "container-body" : "container-none"} style={props.bodyStyle}>{props.bodyContent}</p>
             {props.extraComponents}
         </div>
     )

@@ -19,14 +19,23 @@ function Boton(props) {
 
     return (
         <>
-            <button className='boton' style={props.style ? props.style : buttonStyle}>
+            <button className='boton' style={props.buttonStyle ? props.buttonStyle : buttonStyle} onClick={props.onClick}>
                 {props.icono}
-                <div className='text'>{props.contenido}</div>
-            </button>
+                <p className={props.contenido ? 'text' : 'container-none'} style={props.textStyle}>{props.contenido}</p>
+            </button >
         </>
 
     )
 }
 
+
+/*
+.container-none {
+    visibility: hidden;
+    margin: 0;
+    padding: 0;
+
+}
+*/
 export default Boton;
 //<img src={wallet_img} alt='wallet' className='icono'/>

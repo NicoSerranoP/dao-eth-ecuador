@@ -28,7 +28,7 @@
 
 /*grupos*/
 .boton-grupo {
-    flex: 1;
+    flex: 2;
     display: flex;
     justify-content: right;
     align-items: center;
@@ -44,4 +44,6 @@
     align-items: center;
     height: 100%;
     padding-left: 4vw;
+    background-color: transparent;
+    border: none;
 }
