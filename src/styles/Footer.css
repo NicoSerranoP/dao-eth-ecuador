@@ -1,0 +1,48 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #231f20;
+    width: 100%;
+
+}
+
+
+
+.titulo-logo {
+    color: #ffffff;
+    font-size: calc(1vh + 2vw);
+    width: 100%;
+    height: 100%;
+    /*centrar texto verticalmente*/
+    display: flex;
+    align-items: center;
+}
+
+/*grupos*/
+
+.footer-boton-grupo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+
+}
+
+.footer-botones-grupo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.gradient-separator {
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, #fddb22, #1b77ae, #ba2733);
+}
