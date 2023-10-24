@@ -20,7 +20,9 @@ const gradientContainerStyle = {
 
 const containerStyle1 = {
     backgroundColor: '#231f20',
-    height: '100%',
+
+    //minHeight: '100%',
+    //height: 'fit-content',
     //display: 'block',
     //padding: '1vh 1vw',
 }
@@ -51,13 +53,24 @@ const lista1 = <Lista
 
 
 /*---------------[Contenedor Gradiente]---------------*/
-const propuesta = <PropuestaParticipante
+const propuesta1 = <PropuestaParticipante
     title='Propuesta 1'
     description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl eget ultricies ultrices, nisl nisl aliquam nisl, nec aliquam nisl nisl nec.'
     createdBy='Juan Perez'
     timeUntil='1 dia'
+    cantidadSi='26'
+    cantidadNo='12'
 />
-const extraComponentsGradient = [propuesta]
+
+const propuesta2 = <PropuestaParticipante
+    title='Propuesta 2'
+    description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl eget ultricies ultrices, nisl nisl aliquam nisl, nec aliquam nisl nisl nec.'
+    createdBy='Kenny Pinchao'
+    timeUntil='10 dias'
+    cantidadSi='2'
+    cantidadNo='10'
+/>
+const extraComponentsGradient = [propuesta1, propuesta2, propuesta1, propuesta2]
 
 const gradientContainer = <Container
     containerStyle={gradientContainerStyle}
