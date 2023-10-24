@@ -19,7 +19,7 @@ function PropuestaParticipante(props) {
 
             <p className="propuesta-infotext">Creado por {props.createdBy}</p>
             <p className="propuesta-infotext">Votos terminan en <strong>{props.timeUntil}</strong></p>
-            <Votacion cantidadSi='1' cantidadNo='1' />
+            <Votacion cantidadSi={props.cantidadSi} cantidadNo={props.cantidadNo} />
         </div>
     )
 }
