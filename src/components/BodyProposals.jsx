@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Container from "./Container";
 import Boton from "./Boton";
 import Lista from "./Lista";
 import WalletIcon from "./img/WalletIcon";
 import "../styles/Body.css";
 import PropuestaParticipante from "./PropuestaParticipante";
+
+import {Contract, getDefaultProvider } from "ethers";
+import ABIBaal from "../abi/Baal.json";
+import ABIIBaalToken from "../abi/IBaalToken.json";
 
 /*---------------[Estilos]---------------*/
 const gradientContainerStyle = {
@@ -83,6 +87,23 @@ const extraComponents1 = [boton, boton]
 const extraComponents2 = [gradientContainer]
 
 function Body() {
+    useEffect(() => {
+        const call = async () => {
+            const provider = getDefaultProvider('arbitrum');
+            const baal = new Contract("0xF52d38c87f016d1a6090Ab356356A4CF1015EB9c", ABIBaal, provider);
+            const proposalCount = Number(await baal.proposalCount());
+
+            const baalToken = new Contract(await baal.sharesToken(), ABIIBaalToken, provider);
+            console.log( await baalToken.name() )
+
+            let proposals = [];
+            for (let i = 0; i < proposalCount; i++) {
+                const proposal = await baal.proposals(i);
+                proposals.push(proposal);
+            }
+        }
+        call();
+    }, []);
     return (
         <div className='body'>
             <Container
